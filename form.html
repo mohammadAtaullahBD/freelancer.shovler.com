@@ -9,52 +9,86 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e0bfd35cdd.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="container">
-        <form>
-            <label class="form-label" for="firstName">First Name:</label>
-            <input class="form-control" type="text" id="firstName" placeholder="Enter your first name">
-            <label class="form-label" for="lastName">Last Name:</label>
-            <input class="form-control" type="text" id="lastName" placeholder="Enter your last name">
-            <label class="form-label" for="email">Email address:</label>
-            <input class="form-control" type="text" id="email" placeholder="Enter your email">
-            <label class="form-label" for="location">Property Location:</label>
-            <div id="location">
-                <input class="form-control" type="text" id="address" placeholder="Enter your address">
-                <input class="form-control" type="text" id="state" placeholder="State">
-                <input class="form-control" type="text" id="zip" placeholder="Zip">
-            </div>
-            <select name="" id="propertyType">
-                <option disabled>Select option</option>
-                <option value="residential">Residential</option>
-                <option value="business">Business</option>
-                <option value="commercial">Commercial</option>
-            </select>
-            <label class="form-label" for="numberOfCarToPark">How many cars can park in your driveway or parking
-                lot?</label>
-            <input class="form-control" type="text" id="numberOfCarToPark">
-            <label class="form-label" for="walkway">Walkway:</label>
-            <select name="" id="walkway">
-                <option>Select option</option>
-                <option value="small">Small</option>
-                <option value="medium">Medium</option>
-                <option value="large">Large</option>
-            </select>
-            <label class="form-label" for="sidewalk">Sidewalk</label>
-            <select name="" id="sidewalk">
-                <option>Select option</option>
-                <option value="small">Small</option>
-                <option value="medium">Medium</option>
-                <option value="large">Large</option>
-            </select>
-            <label class="form-label" for="instruction">Special Instruction:</label>
-            <input class="form-control" type="text" id="instruction" placeholder="If you have any comment">
-            <a href="#">Request Quote</a>
-            <p> Sends email to address</p>
-        </form>
-    </div>
+    <section class="form-section container-fluid py-5">
+        <div class="container py-5 form-color">
+            <form action="https://formsubmit.co/mohammad.ataullah.bd@gmail.com" method="POST">
+                <label class="form-label" for="firstName">First Name:</label>
+                <input class="form-control bg-color" type="text" name="firstName" id="firstName"
+                    placeholder="Enter your first name">
+                <label class="form-label" for="lastName">Last Name:</label>
+                <input class="form-control" type="text" name="lastName" id="lastName"
+                    placeholder="Enter your last name">
+                <label class="form-label" for="email">Email address:</label>
+                <input class="form-control" type="email" name="email" id="email" placeholder="Enter your email"
+                    required>
+                <label class="form-label" for="location">Property Location:</label>
+                <div class="d-flex" id="location">
+                    <input class="form-control mr-2" type="text" name="address" id="address"
+                        placeholder="Enter your address">
+                    <input class="form-control mx-2 w-25" type="text" name="state" id="state" placeholder="State">
+                    <input class="form-control ml-2 w-25" type="number" name="zip" id="zip" placeholder="Zip">
+                </div>
+                <label for="propertyType">Property Type:</label>
+                <select class="form-select" name="propertyType" id="propertyType">
+                    <option>Select option</option>
+                    <option value="residential">Residential</option>
+                    <option value="business">Business</option>
+                    <option value="commercial">Commercial</option>
+                </select>
+                <label class="form-label" for="numberOfCarToPark">How many cars can park in your driveway or parking
+                    lot?</label>
+                <input class="form-control mb-3" type="number" name="numberOfCarToPark" id="numberOfCarToPark">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex  align-items-center w-50">
+                        <label class="form-label" for="walkway">Walkway:</label>
+                        <select class="form-select mx-2" name="walkway" id="walkway">
+                            <option>Select option</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="d-flex  align-items-center w-50">
+                        <label class="form-label mx-2" for="sidewalk">Sidewalk</label>
+                        <select class="form-select" name="sidewalk" id="sidewalk">
+                            <option>Select option</option>
+                            <option>Select option</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+                <label class="form-label" for="instruction">Special Instruction:</label>
+                <textarea class="form-control" type="text" name="instruction" id="instruction"
+                    placeholder="If you have any comment"></textarea>
+                <div class="d-flex justify-content-center pt-5">
+                    <p><button class="btn btn-outline-info text-dark" type="submit">Request Quote</button></p>
+                    <p class="p-2"><i class="fa-solid fa-arrow-left"></i> Sends email to address</p>
+                </div>
+
+
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_autoresponse" value="Thank you for the response">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+            </form>
+        </div>
+    </section>
 </body>
 
 </html>
+
+
+<!--
+    uruguay - 11/4
+    brazil - 3/8 
+    win - 12
+    runner up - 10 -->

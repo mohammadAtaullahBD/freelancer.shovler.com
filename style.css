@@ -1,18 +1,24 @@
 .sign-up{
-    background-image: url(./banner_bg.jpg);
+    background-image: url(./images/banner_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    color: #ffffff;
     height: 100vh;
-    overflow: hidden;
 }
 .sign-up-link{
     background-color: #ffffff;
     color: #91c1cf;
     border-radius: 35px;
-    padding: 12px 0;
 }
 .sign-up-link:hover{
     color: #ffffff;
     background-color: #91c1cf;
+}
+.form-color{
+    background-color: #f8f8f8;
+}
+.form-section{
+    background-color: #91c1cf;
+}
+.thanks-body{
+    height: 100vh;
 }
