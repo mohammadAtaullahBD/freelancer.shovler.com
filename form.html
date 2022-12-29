@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <label class="form-label" for="firstName">First Name:</label>
+            <input class="form-control" type="text" id="firstName" placeholder="Enter your first name">
+            <label class="form-label" for="lastName">Last Name:</label>
+            <input class="form-control" type="text" id="lastName" placeholder="Enter your last name">
+            <label class="form-label" for="email">Email address:</label>
+            <input class="form-control" type="text" id="email" placeholder="Enter your email">
+            <label class="form-label" for="location">Property Location:</label>
+            <div id="location">
+                <input class="form-control" type="text" id="address" placeholder="Enter your address">
+                <input class="form-control" type="text" id="state" placeholder="State">
+                <input class="form-control" type="text" id="zip" placeholder="Zip">
+            </div>
+            <select name="" id="propertyType">
+                <option disabled>Select option</option>
+                <option value="residential">Residential</option>
+                <option value="business">Business</option>
+                <option value="commercial">Commercial</option>
+            </select>
+            <label class="form-label" for="numberOfCarToPark">How many cars can park in your driveway or parking
+                lot?</label>
+            <input class="form-control" type="text" id="numberOfCarToPark">
+            <label class="form-label" for="walkway">Walkway:</label>
+            <select name="" id="walkway">
+                <option>Select option</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <label class="form-label" for="sidewalk">Sidewalk</label>
+            <select name="" id="sidewalk">
+                <option>Select option</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <label class="form-label" for="instruction">Special Instruction:</label>
+            <input class="form-control" type="text" id="instruction" placeholder="If you have any comment">
+            <a href="#">Request Quote</a>
+            <p> Sends email to address</p>
+        </form>
+    </div>
+</body>
+
+</html>
